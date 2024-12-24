@@ -4,9 +4,140 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../output.css" />
+    <style>
+      body {
+        margin: 0;
+      }
+      div {
+        background-color: skyblue;
+      }
+      .nav {
+        height: 80px;
+        text-align: center;
+        margin: 0 auto;
+      }
+      .nav::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      .logo {
+        width: 200px;
+        background-color: rgb(226, 226, 226);
+        text-align: center;
+        line-height: 80px;
+        margin-right: 10px;
+        float: left;
+      }
+      .banner1 {
+        width: 540px;
+        background-color: rgb(226, 226, 226);
+        text-align: center;
+        line-height: 80px;
+        margin-right: 10px;
+        float: left;
+      }
+      .banner2 {
+        width: 200px;
+        background-color: rgb(226, 226, 226);
+        text-align: center;
+        line-height: 80px;
+        float: left;
+      }
+      .foot,
+      .menu {
+        margin-top: 10px;
+        background-color: rgb(226, 226, 226);
+      }
+      .nav,
+      .menu,
+      .content,
+      .foot {
+        width: 960px;
+        margin: 10px auto;
+      }
+      .menu {
+        text-align: center;
+        height: 30px;
+        line-height: 30px;
+      }
+      .foot {
+        text-align: center;
+        height: 60px;
+        line-height: 60px;
+      }
+      .up1,
+      .up2 {
+        width: 368px;
+        height: 198px;
+        border: 1px solid black;
+        margin-right: 10px;
+        float: left;
+        text-align: center;
+      }
+      .up::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      .down1 {
+        width: 178px;
+        height: 198px;
+        border: 1px solid black;
+        margin-right: 10px;
+        margin-top: 10px;
+        float: left;
+        text-align: center;
+      }
+      .down::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      .right div {
+        width: 198px;
+        height: 128px;
+        border: 1px solid black;
+        float: right;
+      }
+      .right::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      .content::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    </style>
   </head>
   <body>
-    <div>Hello</div>
+    <div class="nav">
+      <div class="logo">logo</div>
+      <div class="banner1">banner1</div>
+      <div class="banner2">banner2</div>
+    </div>
+    <div class="menu">菜单</div>
+    <div class="content">
+      <div class="left">
+        <div class="up">
+          <div class="up1">栏目一</div>
+          <div class="up2">栏目二</div>
+        </div>
+        <div class="down">
+          <div class="down1">栏目三</div>
+          <div class="down1">栏目四</div>
+          <div class="down1">栏目五</div>
+          <div class="down1">栏目六</div>
+        </div>
+      </div>
+      <div class="right">
+        <div>栏目七</div>
+        <div>栏目八</div>
+        <div>栏目九</div>
+      </div>
+    </div>
+    <div class="foot">页脚</div>
   </body>
 </html>
