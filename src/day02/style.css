@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  margin-top: 10px;
+  background-color: aliceblue;
+}
+
+.logo {
+  width: 200px;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+}
